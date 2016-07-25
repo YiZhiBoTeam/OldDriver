@@ -4,14 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.rp.ezhibo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+
+   <LinearLayout
+       android:layout_alignParentBottom="true"
+       android:clipChildren="false"
+       android:layout_margin="15dp"
+       android:background="@drawable/mymainbottomshape"
+       android:id="@+id/main_bottom"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:clickable="true"
+           android:onClick="MyClick"
+           android:layout_marginLeft="20dp"
+           android:id="@+id/main_bottom_layout1"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_gravity="center"
+                  android:src="@drawable/mymainbottomimg1"
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"/>
+           <TextView
+               android:textColor="#EAA097"
+               android:layout_gravity="center"
+               android:text="首页"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:clickable="true"
+           android:onClick="MyClick"
+           android:id="@+id/main_bottom_layout2"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_gravity="center"
+               android:src="@drawable/mymainbottomimg2"
+               android:layout_width="25dp"
+               android:layout_height="25dp"/>
+           <TextView
+               android:textColor="#EAA097"
+               android:layout_gravity="center"
+               android:text="话题"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+
+       <LinearLayout
+
+           android:clipChildren="false"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content">
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:clickable="true"
+           android:onClick="MyClick"
+           android:id="@+id/main_bottom_layout3"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content">
+           <ImageView
+
+               android:layout_gravity="center"
+               android:src="@drawable/mymainbottomimg3"
+               android:layout_width="25dp"
+               android:layout_height="25dp"/>
+           <TextView
+               android:textColor="#EAA097"
+               android:layout_gravity="center"
+               android:text="找朋友"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:clickable="true"
+           android:onClick="MyClick"
+           android:layout_marginRight="20dp"
+           android:id="@+id/main_bottom_layout4"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_gravity="center"
+               android:src="@drawable/mymainbottomimg4"
+               android:layout_width="25dp"
+               android:layout_height="25dp"/>
+           <TextView
+               android:textColor="#EAA097"
+               android:layout_gravity="center"
+               android:text="消息"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+    <ImageView
+        android:id="@+id/main_live"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/home_tab_icon_live"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
 </RelativeLayout>
