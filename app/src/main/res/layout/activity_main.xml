@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.rp.ezhibo.MainActivity">
+    tools:context=".view.MainActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
 
 
    <LinearLayout
@@ -126,11 +136,6 @@
         android:src="@drawable/home_tab_icon_live"
         android:layout_width="80dp"
         android:layout_height="80dp"/>
-    <FrameLayout
-        android:id="@+id/main_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </FrameLayout>
 
 </RelativeLayout>
