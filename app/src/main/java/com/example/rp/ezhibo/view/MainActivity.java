@@ -1,4 +1,5 @@
 package com.example.rp.ezhibo.view;
+
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
@@ -9,24 +10,19 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.rp.ezhibo.R;
-import com.example.rp.ezhibo.fragment.FriendFragment;
 import com.example.rp.ezhibo.fragment.SYFragment;
 
 public class MainActivity extends AppCompatActivity {
     private ActionBar bar;
+
     private LinearLayout[]layouts={null,null,null,null};
     private FragmentManager mFragmentManager;//进行碎片的管理
     private SYFragment syFragment,syFragment2,syFragment3,syFragment4;//这里改成自己写的Fragment
-    private FriendFragment mFriendFragment;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         bar=getSupportActionBar();
         bar.hide();
-
         setContentView(R.layout.activity_main);
         //第一次上传
         /**
@@ -45,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
        syFragment=new SYFragment();
          syFragment2=new SYFragment();
-        mFriendFragment=new FriendFragment();
+        syFragment3=new SYFragment();
         syFragment4=new SYFragment();
 
 
@@ -93,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.main_bottom_layout3:
 
-                mFragmentManager.beginTransaction().replace(R.id.main_fragment,mFriendFragment).commit();
+                mFragmentManager.beginTransaction().replace(R.id.main_fragment,syFragment3).commit();
                 for (int i = 0; i < 4; i++) {
                     ImageView mainbottomimg= (ImageView) layouts[i].getChildAt(0);
                     mainbottomimg.setEnabled(true);

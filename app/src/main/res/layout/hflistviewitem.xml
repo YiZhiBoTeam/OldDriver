@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+  >
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/hflistview_headimg"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <TextView
+            android:paddingLeft="3dp"
+            android:layout_alignTop="@id/hflistview_headimg"
+            android:layout_toRightOf="@id/hflistview_headimg"
+            android:text="adsf"
+            android:textSize="12dp"
+            android:id="@+id/hflistview_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_alignLeft="@id/hflistview_nickname"
+            android:layout_alignBottom="@id/hflistview_headimg"
+            android:id="@+id/hflistview_locationimg"
+            android:layout_below="@id/hflistview_nickname"
+            android:layout_toRightOf="@id/hflistview_headimg"
+            android:src="@drawable/living_personal_information_float_icon_gps"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_alignBottom="@id/hflistview_locationimg"
+          android:layout_toRightOf="@id/hflistview_locationimg"
+            android:layout_below="@id/hflistview_nickname"
+            android:id="@+id/hflistview_location"
+            android:text="上海"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/hflistview_yikan"
+            android:layout_alignBottom="@id/hflistview_location"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="已看"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/hflistview_yikan"
+            android:layout_alignBottom="@id/hflistview_location"
+            android:id="@+id/hflistview_watch"
+            android:text="6882"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/hflistview_img"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"/>
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_home_video_mark_video"
+            android:layout_marginLeft="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+        <TextView
+            android:id="@+id/hflistview_title"
+            android:layout_marginLeft="10dp"
+            android:text="asdfdasf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
