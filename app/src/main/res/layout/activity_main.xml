@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fdead7b6"
     tools:context=".view.MainActivity">
+
+
 
     <FrameLayout
         android:id="@+id/main_fragment"
@@ -13,6 +14,9 @@
         android:layout_height="match_parent">
 
     </FrameLayout>
+
+
+
    <LinearLayout
        android:layout_alignParentBottom="true"
        android:clipChildren="false"

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rp.ezhibo.view.FriendWeekRengActivity">
+
+
+    <TextView
+        android:id="@+id/tv_friendweekreng"
+        android:padding="10dp"
+        android:text="任性榜"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:onClick="back"
+        android:clickable="true"
+        android:src="@drawable/ic_arrow_action_bar_back"
+        android:id="@+id/iv_friendweekreng"
+        android:layout_margin="5dp"
+        android:layout_width="30dp"
+        android:padding="5dp"
+        android:layout_height="30dp"/>
+
+    <ListView
+        android:layout_below="@id/tv_friendweekreng"
+        android:id="@+id/lv_friendweekreng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</RelativeLayout>

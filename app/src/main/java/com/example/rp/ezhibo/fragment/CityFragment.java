@@ -10,16 +10,15 @@ import android.view.ViewGroup;
 import com.example.rp.ezhibo.R;
 
 /**
- * Created by rp on 2016/7/25.
+ * Created by 三尺清辉照山河 on 2016/7/26.
+ *
+ * 朋友--同城
  */
-public class SYFragment extends Fragment {
-    private View view;
-
+public class CityFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.syfragment,container,false);
-
-        return view;
+        View v=inflater.inflate(R.layout.city_fragment,container,false);
+        return v;
     }
 }
